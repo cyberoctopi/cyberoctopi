@@ -1,0 +1,1 @@
+cljs-repl would give a no input error.  seems related to piggieback. changed from com.cemerick to cider/piggieback
