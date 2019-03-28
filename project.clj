@@ -13,6 +13,7 @@
                  [org.slf4j/jcl-over-slf4j "1.7.25"]
                  [org.slf4j/log4j-over-slf4j "1.7.25"]
                  [com.stuartsierra/component "0.4.0"]
+                 [reloaded.repl "0.2.4"]
                  [reagent "0.8.1"] 
                  [re-frame "0.10.6"]]
 
