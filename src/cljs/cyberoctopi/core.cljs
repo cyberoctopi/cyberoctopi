@@ -1,7 +1,10 @@
 (ns cyberoctopi.core
   (:require [reagent.core :as reagent]))
 
-(enable-console-print!)
+(defn dev-setup []
+  (when config/defbug? 
+    (enable-console-print!)
+    (println "dev mode")))
 
 (defn temp-view []
   [:h1 "Hello Cyberoctopi"])
@@ -12,4 +15,4 @@
 
 
 (defn ^:export init []
-  (console.log "Initializing Cyberoctopi"))
+  (println "Initializing Cyberoctopi"))
