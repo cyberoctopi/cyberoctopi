@@ -15,3 +15,6 @@ pom.xml.asc
 /*-init.clj
 /resources/public/js/compiled
 out
+*.sassc
+*.map
+/resources/public/csss/style.css
