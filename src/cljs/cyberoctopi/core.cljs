@@ -1,13 +1,20 @@
 (ns cyberoctopi.core
-  (:require [reagent.core :as reagent]))
+  (:require [reagent.core :as reagent]
+            [cyberoctopi.config :as config]))
 
 (defn dev-setup []
-  (when config/defbug? 
+  (when config/debug? 
     (enable-console-print!)
     (println "dev mode")))
 
+(defn data-tableau []
+  [:div.data-tableau (str "testing data tableau!")])
+
 (defn temp-view []
-  [:h1 "Hello Cyberoctopi"])
+  (fn []
+    [:div 
+     [data-tableau]
+     [:h4 "Cyberoctopi:"]]))
 
 (defn mount-root []
   (reagent/render [temp-view]
@@ -16,3 +23,6 @@
 
 (defn ^:export init []
   (println "Initializing Cyberoctopi"))
+
+
+;; TODO set up a function to fire off figwheel and cljs-repl in one call
