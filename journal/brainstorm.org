@@ -1,0 +1,4 @@
+
+* TODO Log books that you want to read and count them off as you've read them. Reading List/Done (maybe have a red line when books are checked off as finished)
+*** TODO Summary of characters that I can add on to as I read
+*** TODO new note for each chapter to keep up with storyline, alert of spoilers

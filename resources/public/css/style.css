@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 body {
   background-color: #021212;
-  color: #fff;
+  color: #dcdcdc;
   font-family: "Roboto", Open Sans, Helvetica Neue, Arial, sans-serif; }
 
+logo {
+  font-size: 1.1em;
+  border-bottom: 2px solid #1160A6;
+  padding-bottom: 4px; }
+
 .data-tableau {
+  position: relative;
+  top: 20px;
+  background-color: #031e1e;
   color: #cc8490;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  max-width: 800px;
+  align: center;
+  padding: 5px 10px 5px 10px;
+  border-bottom: 1px dotted #82CDF0;
+  border-top: 1px solid #82CDF0; }
 
 /*# sourceMappingURL=style.css.map */

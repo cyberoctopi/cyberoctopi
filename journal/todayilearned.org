@@ -1,15 +1,28 @@
 
 
 
+* Hierarachical Data postgresql
+https://coderwall.com/p/whf3-a/hierarchical-data-in-postgres
 
+* DONE checkout Lambda Stew https://lambdastew.com
 
-* TODO checkout Lambda Stew https://lambdastew.com
 #+begin_src clojure
 (defn index [_]
   {:status 200
    :headers {"Content-Type" "text/html"}
    :body (io/file "resources/public/index.html")})
- 
+
 (defroutes routes
   [[["/" {:get index}]]])
 #+end_src
+
+
+* SQL commands
+https://gist.github.com/apolloclark/ea5466d5929e63043dcf
+http://www.postgresqltutorial.com/psql-commands/
+psql dbname username
+
+TABLE tablename;
+\dt - shows table data
+
+DELETE FROM tablename;

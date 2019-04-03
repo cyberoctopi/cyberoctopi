@@ -1,23 +1,16 @@
 (ns cyberoctopi.core
   (:require [reagent.core :as reagent]
-            [cyberoctopi.config :as config]))
+            [cyberoctopi.config :as config]
+            [cyberoctopi.ui.views :as ui]))
 
 (defn dev-setup []
   (when config/debug? 
     (enable-console-print!)
     (println "dev mode")))
 
-(defn data-tableau []
-  [:div.data-tableau (str "testing data tableau!")])
-
-(defn temp-view []
-  (fn []
-    [:div 
-     [data-tableau]
-     [:h4 "Cyberoctopi:"]]))
 
 (defn mount-root []
-  (reagent/render [temp-view]
+  (reagent/render [ui/main-view]
                   (.getElementById js/document "app")))
 
 
