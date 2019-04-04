@@ -68,7 +68,8 @@
   [:div.container 
    [:div#content
     (str "So this is where the main block will show summaries and lists of posts/blurbs etc made by me")]
-   [books-component]])
+   [books-component]
+   ])
 
 
 
@@ -81,7 +82,7 @@
      [:logo "Cyberoctopi"]
      [search-component]
      [navigation]
-     []
+
      ]))
 
 
