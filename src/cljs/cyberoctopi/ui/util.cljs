@@ -2,5 +2,5 @@
   (:require [re-frame.core :as re-frame]))
 
 
-(def <== (comp deref re-frame/subscribe))
-(def ==> re-frame/dispatch)
+(def <sub (comp deref re-frame/subscribe))
+(def disp> re-frame/dispatch)

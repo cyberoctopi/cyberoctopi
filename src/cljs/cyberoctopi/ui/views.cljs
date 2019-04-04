@@ -2,7 +2,7 @@
   (:require [reagent.core :as r]
             [re-frame.core :refer [subscribe dispatch] :as re-frame]
   ;;          [cyberoctopi.ui.subs :as subs]
-            [cyberoctopi.ui.util :refer [<== ==>]]
+            [cyberoctopi.ui.util :refer [<sub disp>]]
             [cyberoctopi.db :as db]))
 
 
@@ -24,13 +24,23 @@
 (defn show-panel [panel-name logged-in?]
   [panels panel-name logged-in?])
 
+(defn search-component 
+  "search"
+  []
+  (fn []
+    [:div (str "Search")]))
 
+;; (defn breadcrumbs-component
+;;   "Breadcrumbs to notify where you are in the system"
+;;   []
+;;   (fn []
+;;     [:div.#breadcrumb-component (str "Front Page >")]))
 
 (defn navigation []
   "Main navigation for Cyberoctopi sections"
   (fn []
     [:div#navi
-     [:div [:ul
+     [:ul
             [:li
              [:a "Journal"]]
             [:li
@@ -40,7 +50,26 @@
             [:li
              [:a "Art"]]
             [:li
-             [:a "Reading List"]]]]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
+             [:a "Reading List"]]]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
+
+
+(defn books-component []
+  (fn []
+    [:div#book-sidebar
+     [:div
+      [:div (str "Neuromancer")]
+      [:div (str "Mona Lisa Overdrive")]
+      [:div (str "Neuromancer")]
+      [:div (str "Neuromancer")]
+      [:div (str "Neuromancer")]]]))
+
+
+(defn front-panel-content []
+  [:div.container 
+   [:div#content
+    (str "So this is where the main block will show summaries and lists of posts/blurbs etc made by me")]
+   [books-component]])
+
 
 
 
@@ -50,7 +79,10 @@
   (fn []
     [:header
      [:logo "Cyberoctopi"]
-     [navigation]]))
+     [search-component]
+     [navigation]
+     []
+     ]))
 
 
 (re-frame/reg-sub
@@ -61,7 +93,7 @@
 (defn data-tableau []
   "Dashboard display for items in database"
   "Heads up display for the database. "
-  (let [data (<== [::tableau])]
+  (let [data (<sub [::tableau])]
     (fn []
       [:div.data-tableau (pr-str data)])))
 
@@ -72,5 +104,7 @@
    (fn []
       [:div 
        [header]
+
+       [front-panel-content]
        [data-tableau]
        ]))

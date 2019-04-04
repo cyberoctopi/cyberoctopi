@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed")
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i')
 
 $bg1: #021212
 $bg2: #031e1e
@@ -8,14 +9,50 @@ body
   color: #dcdcdc
   font-family: 'Roboto', Open Sans, Helvetica Neue, Arial, sans-serif
 
-logo
-  font-size: 1.1em
-  border-bottom: 2px solid #1160A6
+header
+  display: grid
+  max-width: 1500px
+  margin: 0 auto
+  margin-bottom: 15px
+  grid-template-columns: 200px 500px 800px
+  border-bottom: 2px solid #083256
   padding-bottom: 4px
 
+  logo
+    font-family: 'Montserrat'
+    font-weight: light
+    font-style: italic
+    font-size: 1.1em
+
+  #navi
+    ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+      
+      ul, li
+        margin: 0
+        padding: 0 20px 0 0 
+        position: relative
+        display: inline
+        float: left
+
+#breadcrumb-component
+  display: grid
+  max-width: 1500px
+  background-color: #000
+  color: #fff
+
+.container
+  display: grid
+  max-width: 1500px
+  margin: 0 auto
+  
 .data-tableau
-  position: relative
-  top: 20px
+  display: grid
+  min-width: 1500px
+  margin: 0 auto
+  margin-top: 30px
   background-color: $bg2
   color: #cc8490
   font-size: .8em

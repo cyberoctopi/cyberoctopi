@@ -1,17 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300i");
 body {
   background-color: #021212;
   color: #dcdcdc;
   font-family: "Roboto", Open Sans, Helvetica Neue, Arial, sans-serif; }
 
-logo {
-  font-size: 1.1em;
-  border-bottom: 2px solid #1160A6;
+header {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  grid-template-columns: 200px 500px 800px;
+  border-bottom: 2px solid #083256;
   padding-bottom: 4px; }
+  header logo {
+    font-family: "Montserrat";
+    font-weight: light;
+    font-style: italic;
+    font-size: 1.1em; }
+  header #navi ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    header #navi ul ul, header #navi ul li {
+      margin: 0;
+      padding: 0 20px 0 0;
+      position: relative;
+      display: inline;
+      float: left; }
+
+#breadcrumb-component {
+  display: grid;
+  max-width: 1500px;
+  background-color: #000;
+  color: #fff; }
+
+.container {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto; }
 
 .data-tableau {
-  position: relative;
-  top: 20px;
+  display: grid;
+  min-width: 1500px;
+  margin: 0 auto;
+  margin-top: 30px;
   background-color: #031e1e;
   color: #cc8490;
   font-size: 0.8em;
