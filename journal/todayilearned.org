@@ -26,3 +26,4 @@ TABLE tablename;
 \dt - shows table data
 
 DELETE FROM tablename;
+

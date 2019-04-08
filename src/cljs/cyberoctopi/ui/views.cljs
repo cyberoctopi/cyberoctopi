@@ -28,7 +28,7 @@
   "search"
   []
   (fn []
-    [:div (str "Search")]))
+    [:div (str "")]))
 
 ;; (defn breadcrumbs-component
 ;;   "Breadcrumbs to notify where you are in the system"
@@ -37,14 +37,12 @@
 ;;     [:div.#breadcrumb-component (str "Front Page >")]))
 
 (defn navigation []
-  "Main navigation for Cyberoctopi sections"
+  "Main navigation for cyberoctopi sections"
   (fn []
     [:div#navi
      [:ul
             [:li
              [:a "Journal"]]
-            [:li
-             [:a "Blurbs"]]
             [:li
              [:a "About Me"]]
             [:li
@@ -56,18 +54,19 @@
 (defn books-component []
   (fn []
     [:div#book-sidebar
-     [:div
-      [:div (str "Neuromancer")]
-      [:div (str "Mona Lisa Overdrive")]
-      [:div (str "Neuromancer")]
-      [:div (str "Neuromancer")]
-      [:div (str "Neuromancer")]]]))
+     [:div.current
+      [:div.vertical (str "Current & Latest Reads")]]
+     [:div [:img.book-item {:src (str "img/books/neuro.png")}]]
+     [:div [:img.book-item {:src (str "img/books/mona.png")}]]
+     [:div [:img.book-item {:src (str "img/books/geb.png")}]]
+     [:div [:img.book-item {:src (str "img/books/1q84.png")}]]
+     [:div [:img.book-item {:src (str "img/books/kill.png")}]]]))
 
 
 (defn front-panel-content []
   [:div.container 
    [:div#content
-    (str "So this is where the main block will show summaries and lists of posts/blurbs etc made by me")]
+    (str "Journal content goes here")]
    [books-component]
    ])
 

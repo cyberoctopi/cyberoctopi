@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed")
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300i')
 
-$bg1: #021212
+// $bg1: #021212
+$bg1: #0B1811
 $bg2: #031e1e
+
+$fg3: #F9A082
 
 body
   background-color: $bg1
@@ -15,7 +18,8 @@ header
   margin: 0 auto
   margin-bottom: 15px
   grid-template-columns: 200px 500px 800px
-  border-bottom: 2px solid #083256
+  border-bottom: 1px solid #8a2be2
+  // #083256
   padding-bottom: 4px
 
   logo
@@ -45,6 +49,7 @@ header
 
 .container
   display: grid
+  grid-template-columns: 80% 15%
   max-width: 1500px
   margin: 0 auto
   
@@ -54,7 +59,7 @@ header
   margin: 0 auto
   margin-top: 30px
   background-color: $bg2
-  color: #cc8490
+  color: $fg3
   font-size: .8em
   max-width: 800px
   align: center
@@ -62,3 +67,26 @@ header
   border-bottom: 1px dotted #82CDF0
   border-top: 1px solid #82CDF0
 
+#book-sidebar
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 3px
+
+  .current
+    position: relative
+    background-color: #8a2be2
+    width: 100px
+    height: 150px
+    text-align: center
+
+  .vertical
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 1.2em
+    font-weight: bold
+    font-style: italic
+   
+.book-item
+  width: 100px
+  height: 150px

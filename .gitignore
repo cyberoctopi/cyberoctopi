@@ -18,3 +18,8 @@ out
 *.sassc
 *.map
 /resources/public/csss/style.css
+*.png
+/resources/public/img/.DS_Store
+/resources/public/.DS_Store
+/resources/.DS_Store
+/.DS_Store
