@@ -18,16 +18,18 @@ header {
     font-weight: light;
     font-style: italic;
     font-size: 1.1em; }
-  header #navi ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    header #navi ul ul, header #navi ul li {
+  header #navi {
+    justify-self: end; }
+    header #navi ul {
       margin: 0;
-      padding: 0 20px 0 0;
-      position: relative;
-      display: inline;
-      float: left; }
+      padding: 0;
+      list-style-type: none; }
+      header #navi ul ul, header #navi ul li {
+        margin: 0;
+        padding: 0 20px 0 0;
+        position: relative;
+        display: inline;
+        float: left; }
 
 #breadcrumb-component {
   display: grid;

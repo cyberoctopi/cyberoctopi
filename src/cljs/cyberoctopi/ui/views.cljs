@@ -1,9 +1,13 @@
 (ns cyberoctopi.ui.views
   (:require [reagent.core :as r]
             [re-frame.core :refer [subscribe dispatch] :as re-frame]
+            [reitit.core :as rc]
+            [reitit.frontend :as rf]
+            [reitit.frontend.easy :as rfe]
   ;;          [cyberoctopi.ui.subs :as subs]
             [cyberoctopi.ui.util :refer [<sub disp>]]
             [cyberoctopi.db :as db]))
+
 
 
 (defn- panels [panel-name logged-in?]
@@ -30,12 +34,8 @@
   (fn []
     [:div (str "")]))
 
-;; (defn breadcrumbs-component
-;;   "Breadcrumbs to notify where you are in the system"
-;;   []
-;;   (fn []
-;;     [:div.#breadcrumb-component (str "Front Page >")]))
 
+;; TODO: Fix navigation css and overall width of layout to be more responsive. Start thinking of mobile users now
 (defn navigation []
   "Main navigation for cyberoctopi sections"
   (fn []
