@@ -1,2 +1,24 @@
+#+TODO: IDEA TODO IN-PROGRESS | DONE
+#+TITLE:     (Cyberoctopi) Agenda
+#+AUTHOR:    Jamal Burgess
+#+EMAIL:     jburgess84@gmail.com
 
-"The idea is to escape the stagnation of perfectionism and get your ideas and thoughts out there."
+# "The idea is to escape the stagnation of perfectionism and get your ideas and thoughts out there."
+* Cyberoctopi
+Cyberoctopi is an intelligent journal for me to write both private and public entries. I'm calling it a journal because I want to get away with perfectionism and the trend of writing blog posts as polished
+work. I feel that it's more useful to myself and possibly others to jot quickly and as things come to mind. In the future I'll probably add versioning and even discussions so say you can speak on a subject
+you're confused about or maybe you're just flat out wrong and the community/viewers can discuss and we all grow as a hold. Really I want an environment that encourages people interested in the same things to gather together.
+
+
+** Agenda [/]
+*** TODO Basic reitit routing and 'page' transitions
+*** TODO Add books [1/3]
+**** TODO Create a record of a book in faux database
+**** TODO Add postgresql and hugsql
+**** TODO Rewrite: Create record via http to database
+
+* Scratch
+<2019-04-10 Wed>
+Using solid-fortnight and a few other reitit references. How do I want to break up the the components of my pages?
+-> Basic Window should hold views. Views are the main topic that you're viewing. "Front Page" "Journal" "Books" "About" etc... of course the front page is a collection of everything
+-> Window -> Views -> Panels

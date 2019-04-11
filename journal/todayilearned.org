@@ -1,5 +1,6 @@
 
-
+** TODO Window Management?
+https://github.com/wasamasa/eyebrowse
 
 * Hierarachical Data postgresql
 https://coderwall.com/p/whf3-a/hierarchical-data-in-postgres
