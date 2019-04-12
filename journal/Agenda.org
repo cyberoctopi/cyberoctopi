@@ -21,4 +21,4 @@ you're confused about or maybe you're just flat out wrong and the community/view
 <2019-04-10 Wed>
 Using solid-fortnight and a few other reitit references. How do I want to break up the the components of my pages?
 -> Basic Window should hold views. Views are the main topic that you're viewing. "Front Page" "Journal" "Books" "About" etc... of course the front page is a collection of everything
--> Window -> Views -> Panels
+-> Window -> Views -> Panels -> Components

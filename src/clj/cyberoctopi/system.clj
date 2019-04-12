@@ -1,4 +1,3 @@
-
 (ns cyberoctopi.system
   (:require [com.stuartsierra.component :as component]
             [reloaded.repl :refer [init start stop go reset]]

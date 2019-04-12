@@ -1,5 +1,7 @@
 (ns cyberoctopi.ui.window
   (:require [reagent.core :as r]
+            [re-frame.core :as re-frame]
+            [cyberoctopi.db :as db]
             [cyberoctopi.ui.util :refer [<sub disp>]]))
 
 
@@ -25,25 +27,6 @@
             [:li
              [:a "Reading List"]]]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
 
-
-(defn books-component []
-  (fn []
-    [:div#book-sidebar
-     [:div.current
-      [:div.vertical (str "Current & Latest Reads")]]
-     [:div [:img.book-item {:src (str "img/books/neuro.png")}]]
-     [:div [:img.book-item {:src (str "img/books/mona.png")}]]
-     [:div [:img.book-item {:src (str "img/books/geb.png")}]]
-     [:div [:img.book-item {:src (str "img/books/1q84.png")}]]
-     [:div [:img.book-item {:src (str "img/books/kill.png")}]]]))
-
-
-(defn front-panel-content []
-  [:div.container 
-   [:div#content
-    (str "Journal content goes here")]
-   [books-component]
-   ])
 
 
 (defn header []
@@ -71,14 +54,15 @@
 
 
 
-(defn page-window []
+(defn window-layout [dom]
   "Foundation for web UI"
    (fn []
       [:div 
        [header]
-
-       [front-panel-content]
-       [data-tableau]
+       ;; NOTE: So the only things that belong here are the header and possible a footer.
+                                        ; [front-panel-content]
+                                        ; [data-tableau]
+       dom
        ]))
 
 

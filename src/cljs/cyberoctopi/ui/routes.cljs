@@ -11,8 +11,7 @@
 ;;       (fn [& params]
 ;;         (-> ))}]}])
 
-
-(def router
+(comment (def router
   [rf/router
    [["/" :index]
     ["/about" :about]]])
@@ -33,3 +32,4 @@
     :about #'page-about/render))
 
 (def current-page page-index/render)
+ )
