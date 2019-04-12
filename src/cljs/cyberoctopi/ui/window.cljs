@@ -21,11 +21,10 @@
             [:li
              [:a "Journal"]]
             [:li
+             [:a "Book Work"]]
+            [:li
              [:a "About Me"]]
-            [:li
-             [:a "Art"]]
-            [:li
-             [:a "Reading List"]]]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
+            ]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
 
 
 
@@ -63,6 +62,7 @@
                                         ; [front-panel-content]
                                         ; [data-tableau]
        dom
+       [data-tableau]
        ]))
 
 

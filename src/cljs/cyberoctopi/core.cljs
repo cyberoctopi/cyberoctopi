@@ -3,6 +3,7 @@
             [re-frame.core :as re-frame]
             [cyberoctopi.config :as config]
             [cyberoctopi.events :as events]
+            [cyberoctopi.ui.routes :as routes]
             [cyberoctopi.ui.views :as ui]))
 
 (defn dev-setup []
@@ -13,7 +14,7 @@
 
 (defn mount-root []
   (re-frame/clear-subscription-cache!)
-  (reagent/render [ui/main-view]
+  (reagent/render [routes/current-page]
                   (.getElementById js/document "app")))
 
 

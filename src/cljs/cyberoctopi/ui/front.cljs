@@ -1,6 +1,6 @@
 (ns cyberoctopi.ui.front
   (:require [reagent.core :as reagent :refer [atom]]
-            [reitit.frontend :as reitit]
+            [reitit.frontend :as rf]
             [cyberoctopi.ui.window :refer [window-layout]]))
 
 
@@ -22,6 +22,7 @@
     (str "Journal content goes here")]
    [books-component]
    ])
+
 
 (defn render []
   (window-layout [front-panel]))
