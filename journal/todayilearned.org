@@ -21,6 +21,8 @@ https://coderwall.com/p/whf3-a/hierarchical-data-in-postgres
 * SQL commands
 https://gist.github.com/apolloclark/ea5466d5929e63043dcf
 http://www.postgresqltutorial.com/psql-commands/
+http://www.postgresqltutorial.com/psql-commands/
+psql -d postgres
 psql dbname username
 
 TABLE tablename;

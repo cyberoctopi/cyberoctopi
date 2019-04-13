@@ -16,8 +16,12 @@
                  [org.slf4j/log4j-over-slf4j "1.7.25"]
                  [com.stuartsierra/component "0.4.0"]
                  [reloaded.repl "0.2.4"]
-                 [reagent "0.8.1"] 
-                 [re-frame "0.10.6"]]
+                 [reagent "0.8.1"]
+                 [reagent-utils "0.3.2"]
+                 [re-frame "0.10.6"]
+                 [venantius/accountant "0.2.4"]
+                 [pez/clerk "1.0.0"]
+                 [reagent-utils "0.3.2"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]]
 

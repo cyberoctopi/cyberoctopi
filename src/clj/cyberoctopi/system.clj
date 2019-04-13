@@ -23,8 +23,7 @@
 
 ;; (require 'cyberoctopi.system)
 (reloaded.repl/set-init! #(system :prod))
-(reloaded.repl/go) ()
-
+(reloaded.repl/go)
 
 
 

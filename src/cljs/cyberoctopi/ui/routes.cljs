@@ -1,8 +1,9 @@
 (ns cyberoctopi.ui.routes
   (:require [reitit.frontend :as rf]
-            [reitit.frontend.controllers :as rc]
-            [reitit.frontend.easy :as rfe]
-            [cyberoctopi.ui.front :as panel-front]))
+;            [reitit.frontend.controllers :as rc]
+;            [reitit.frontend.easy :as rfe]
+            [cyberoctopi.ui.front :as panel-front]
+            [cyberoctopi.ui.about :as panel-about]))
 
 
 (def router
@@ -20,8 +21,8 @@
 (defn page-for [route]
   (case route
     :index #'panel-front/render
-;    :about #'page-about/render
-    ))
+    :about #'panel-about/render))
 
 
-(def current-page panel-front/render)
+;(def current-page panel-front/render)
+

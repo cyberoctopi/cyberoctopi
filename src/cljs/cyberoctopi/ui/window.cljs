@@ -2,7 +2,8 @@
   (:require [reagent.core :as r]
             [re-frame.core :as re-frame]
             [cyberoctopi.db :as db]
-            [cyberoctopi.ui.util :refer [<sub disp>]]))
+            [cyberoctopi.ui.util :refer [<sub disp>]]
+            ))
 
 
 (defn search-component 
@@ -21,11 +22,11 @@
             [:li
              [:a "Journal"]]
             [:li
-             [:a "Book Work"]]
+             [:a "Book Worm"]]
             [:li
-             [:a "About Me"]]
-            ]])) ;; TODO break this part off and create a menu system once I have a few dedicated sections to link to
-
+             [:a {:href "/about"} "About Me"]
+             ]
+            ]])) 
 
 
 (defn header []
@@ -44,6 +45,7 @@
  (fn [db _]
    db/default-db))
 
+
 (defn data-tableau []
   "Dashboard display for items in database"
   "Heads up display for the database. "
@@ -52,17 +54,15 @@
       [:div.data-tableau (pr-str data)])))
 
 
-
+;; NOTE: So the only things that belong here are the header and possible a footer.
+; [front-panel-content]
+; [data-tableau]
 (defn window-layout [dom]
   "Foundation for web UI"
-   (fn []
-      [:div 
+     [:div 
        [header]
-       ;; NOTE: So the only things that belong here are the header and possible a footer.
-                                        ; [front-panel-content]
-                                        ; [data-tableau]
        dom
        [data-tableau]
-       ]))
+       ])
 
 

@@ -20,8 +20,7 @@
   [:div.container 
    [:div#content
     (str "Journal content goes here")]
-   [books-component]
-   ])
+   [books-component]])
 
 
 (defn render []
