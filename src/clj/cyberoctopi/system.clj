@@ -6,7 +6,6 @@
             [cyberoctopi.pedestal :as pedestal]))
 
 
-
 (defn system [env]
   (component/system-map
    :service-map
@@ -20,6 +19,7 @@
    (component/using
     (pedestal/new-pedestal)
     [:service-map])))
+
 
 ;; (require 'cyberoctopi.system)
 (reloaded.repl/set-init! #(system :prod))

@@ -4,6 +4,19 @@
 #+EMAIL:     jburgess84@gmail.com
 
 # "The idea is to escape the stagnation of perfectionism and get your ideas and thoughts out there."
+
+ ▄████▄▓██   ██▓ ▄▄▄▄   ▓█████  ██▀███   ▒█████   ▄████▄  ▄▄▄█████▓ ▒█████   ██▓███   ██▓
+▒██▀ ▀█ ▒██  ██▒▓█████▄ ▓█   ▀ ▓██ ▒ ██▒▒██▒  ██▒▒██▀ ▀█  ▓  ██▒ ▓▒▒██▒  ██▒▓██░  ██▒▓██▒
+▒▓█    ▄ ▒██ ██░▒██▒ ▄██▒███   ▓██ ░▄█ ▒▒██░  ██▒▒▓█    ▄ ▒ ▓██░ ▒░▒██░  ██▒▓██░ ██▓▒▒██▒
+▒▓▓▄ ▄██▒░ ▐██▓░▒██░█▀  ▒▓█  ▄ ▒██▀▀█▄  ▒██   ██░▒▓▓▄ ▄██▒░ ▓██▓ ░ ▒██   ██░▒██▄█▓▒ ▒░██░
+▒ ▓███▀ ░░ ██▒▓░░▓█  ▀█▓░▒████▒░██▓ ▒██▒░ ████▓▒░▒ ▓███▀ ░  ▒██▒ ░ ░ ████▓▒░▒██▒ ░  ░░██░
+░ ░▒ ▒  ░ ██▒▒▒ ░▒▓███▀▒░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ░▒ ▒  ░  ▒ ░░   ░ ▒░▒░▒░ ▒▓▒░ ░  ░░▓
+  ░  ▒  ▓██ ░▒░ ▒░▒   ░  ░ ░  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░  ▒       ░      ░ ▒ ▒░ ░▒ ░      ▒ ░
+░       ▒ ▒ ░░   ░    ░    ░     ░░   ░ ░ ░ ░ ▒  ░          ░      ░ ░ ░ ▒  ░░        ▒ ░
+░ ░     ░ ░      ░         ░  ░   ░         ░ ░  ░ ░                   ░ ░            ░
+░       ░ ░           ░                          ░
+
+
 * Cyberoctopi
 Cyberoctopi is an intelligent journal for me to write both private and public entries. I'm calling it a journal because I want to get away with perfectionism and the trend of writing blog posts as polished
 work. I feel that it's more useful to myself and possibly others to jot quickly and as things come to mind. In the future I'll probably add versioning and even discussions so say you can speak on a subject
@@ -22,3 +35,5 @@ you're confused about or maybe you're just flat out wrong and the community/view
 Using solid-fortnight and a few other reitit references. How do I want to break up the the components of my pages?
 -> Basic Window should hold views. Views are the main topic that you're viewing. "Front Page" "Journal" "Books" "About" etc... of course the front page is a collection of everything
 -> Window -> Views -> Panels -> Components
+<2019-04-21 Sun>
+ Menu can be broken up into "Sections" and "Topics"

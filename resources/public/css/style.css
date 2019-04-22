@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300i");
+a:link {
+  color: #8a2be2;
+  text-decoration: none; }
+
+a:hover {
+  opacity: 0.6; }
+
 body {
-  background-color: #0B1811;
+  background-color: #021212;
   color: #dcdcdc;
   font-family: "Roboto", Open Sans, Helvetica Neue, Arial, sans-serif; }
 
@@ -10,16 +17,14 @@ header {
   max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 15px;
-  grid-template-columns: 200px 500px 800px;
-  border-bottom: 1px solid #8a2be2;
-  padding-bottom: 4px; }
+  grid-template-columns: 200px 350px; }
   header logo {
     font-family: "Montserrat";
     font-weight: light;
     font-style: italic;
     font-size: 1.1em; }
   header #navi {
-    justify-self: end; }
+    padding: 3px; }
     header #navi ul {
       margin: 0;
       padding: 0;
@@ -30,6 +35,10 @@ header {
         position: relative;
         display: inline;
         float: left; }
+    header #navi .navi-level-2 {
+      background-color: #000;
+      border-top: 1px solid #8a2be2;
+      font-size: 0.8em; }
 
 #breadcrumb-component {
   display: grid;
@@ -49,7 +58,7 @@ header {
   margin: 0 auto;
   margin-top: 30px;
   background-color: #031e1e;
-  color: #F9A082;
+  color: #E34234;
   font-size: 0.8em;
   max-width: 800px;
   align: center;

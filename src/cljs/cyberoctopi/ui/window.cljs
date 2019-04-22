@@ -12,7 +12,6 @@
   (fn []
     [:div (str "")]))
 
-
 ;; TODO: Fix navigation css and overall width of layout to be more responsive. Start thinking of mobile users now
 (defn navigation []
   "Main navigation for cyberoctopi sections"
@@ -20,13 +19,16 @@
     [:div#navi
      [:ul
             [:li
-             [:a "Journal"]]
+             [:a "ournal"]]
             [:li
              [:a "Book Worm"]]
             [:li
              [:a {:href "/about"} "About Me"]
              ]
-            ]])) 
+      ]
+     [:div.navi-level-2
+      [:div (str "Navi level 2")
+       ]]])) 
 
 
 (defn header []
@@ -34,7 +36,7 @@
   (fn []
     [:header
      [:logo "Cyberoctopi"]
-     [search-component]
+;;     [search-component]
      [navigation]
 
      ]))

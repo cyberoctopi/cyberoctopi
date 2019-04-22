@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed")
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300i')
 
-// $bg1: #021212
-$bg1: #0B1811
+$bg1: #021212
+//$bg1: #031717
+//$bg1: #0B1811
 $bg2: #031e1e
+$violet: #8a2be2
+//$fg3: #F9A082
+$fg3: #E34234
 
-$fg3: #F9A082
+a:link
+  color: $violet
+  text-decoration: none
 
+a:hover
+  opacity: 0.6
+ 
 body
   background-color: $bg1
   color: #dcdcdc
@@ -17,10 +26,9 @@ header
   max-width: 1500px
   margin: 0 auto
   margin-bottom: 15px
-  grid-template-columns: 200px 500px 800px
-  border-bottom: 1px solid #8a2be2
-  // #083256
-  padding-bottom: 4px
+  grid-template-columns: 200px 350px
+  //  border-bottom: 1px solid $violet
+  //  padding-bottom: 4px
 
   logo
     font-family: 'Montserrat'
@@ -29,7 +37,8 @@ header
     font-size: 1.1em
 
   #navi
-    justify-self: end
+    padding: 3px
+    //    justify-self: end
     ul
       margin: 0
       padding: 0
@@ -41,6 +50,11 @@ header
         position: relative
         display: inline
         float: left
+
+    .navi-level-2
+      background-color: #000
+      border-top: 1px solid $violet
+      font-size: .8em
 
 #breadcrumb-component
   display: grid
