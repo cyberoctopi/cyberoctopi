@@ -5,6 +5,10 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.520"]
+                 [expound "0.7.2"]
+                 [eftest "0.5.7"]
+                 [metosin/testit "0.3.0"]
+                 [reifyhealth/specmonstah "2.0.0-alpha-1"]
                  [io.pedestal/pedestal.service "0.5.5"]
                  [io.pedestal/pedestal.service-tools "0.5.5"]
                  [io.pedestal/pedestal.immutant "0.5.5"]
@@ -25,7 +29,7 @@
 
   :plugins [[lein-cljsbuild "1.1.7"]]
 
-  :source-paths ["src/clj" "src/cljs"]
+  :source-paths ["src/dev" "src/clj" "src/cljs"]
   :resource-paths ["config", "resources"]
   ;:target-path "target/%s/"
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]

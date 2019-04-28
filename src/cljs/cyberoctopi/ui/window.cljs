@@ -16,19 +16,23 @@
 (defn navigation []
   "Main navigation for cyberoctopi sections"
   (fn []
-    [:div#navi
-     [:ul
-            [:li
-             [:a "ournal"]]
-            [:li
-             [:a "Book Worm"]]
-            [:li
-             [:a {:href "/about"} "About Me"]
-             ]
-      ]
-     [:div.navi-level-2
-      [:div (str "Navi level 2")
-       ]]])) 
+    [:div
+     [:div#navi
+      [:ul
+       [:li
+        [:a "Journal"]]
+       [:li
+        [:a "Book Worm"]]
+       [:li
+        [:a {:href "/about"} "About Me"]]]
+      [:div.navi-level-2
+       [:div (str "Navi level 2")
+        ]]]])) 
+
+
+(defn yearly-selector []
+  (fn []
+    [:div.yearly-selector "2018 2019 2020"]))
 
 
 (defn header []
@@ -38,7 +42,7 @@
      [:logo "Cyberoctopi"]
 ;;     [search-component]
      [navigation]
-
+     [yearly-selector]
      ]))
 
 

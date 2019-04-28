@@ -1,3 +1,10 @@
+* TODO <2019-04-23 Tue> Muuntaja and Sieppari
+https://github.com/metosin/muuntaja
+Take a look at adding these to project
+
+*** TODO <2019-04-23 Tue> Testing
+Specmonstah for generating test data - https://github.com/reifyhealth/specmonstah
+Eftest runner
 
 * TODO Log books that you want to read and count them off as you've read them. Reading List/Done (maybe have a red line when books are checked off as finished)
 *** TODO Summary of characters that I can add on to as I read

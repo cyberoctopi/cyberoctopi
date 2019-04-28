@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300i");
 a:link {
-  color: #8a2be2;
+  color: #6f00ff;
   text-decoration: none; }
 
 a:hover {
@@ -10,7 +10,8 @@ a:hover {
 body {
   background-color: #021212;
   color: #dcdcdc;
-  font-family: "Roboto", Open Sans, Helvetica Neue, Arial, sans-serif; }
+  font-family: "Roboto", Open Sans, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.3em; }
 
 header {
   display: grid;
@@ -37,7 +38,7 @@ header {
         float: left; }
     header #navi .navi-level-2 {
       background-color: #000;
-      border-top: 1px solid #8a2be2;
+      border-top: 1px solid #6f00ff;
       font-size: 0.8em; }
 
 #breadcrumb-component {
@@ -72,7 +73,7 @@ header {
   grid-gap: 3px; }
   #book-sidebar .current {
     position: relative;
-    background-color: #8a2be2;
+    background-color: #6f00ff;
     width: 100px;
     height: 150px;
     text-align: center; }
