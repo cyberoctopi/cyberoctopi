@@ -21,3 +21,4 @@ out
 /resources/public/.DS_Store
 /resources/.DS_Store
 /.DS_Store
+*.cljs#
