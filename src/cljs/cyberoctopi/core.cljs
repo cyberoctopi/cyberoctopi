@@ -16,7 +16,7 @@
     (enable-console-print!)
     (println "dev mode")))
 
-(def current-page front-panel/render)
+;;(def current-page front-panel/render)
 
 (defn mount-root []
 ;  (re-frame/clear-subscription-cache!)
